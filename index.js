@@ -1,7 +1,7 @@
 // Write your solution in this file!
 const employee = {
   name: 'Sam',
-  streetAddress: '11 Broadway'
+  streetAddress: '13 King Street'
 };
 function updateEmployeeWithKeyAndValue(employee, key, value) {
   const newEmployee = { ...employee };
@@ -23,17 +23,17 @@ function destructivelyDeleteFromEmployeeByKey(employee, key) {
 }
 // Test cases
 const updatedEmployee = updateEmployeeWithKeyAndValue(employee, 'age', 30);
-console.log(updatedEmployee); // { name: 'Sam', streetAddress: '11 Broadway', age: 30 }
-console.log(employee); // { name: 'Sam', streetAddress: '11 Broadway' }
+console.log(updatedEmployee); // { name: 'Sam', streetAddress: '13 King Street', age: 30 }
+console.log(employee); // { name: 'Sam', streetAddress: '13 King Street' }
 const destructivelyUpdatedEmployee = destructivelyUpdateEmployeeWithKeyAndValue(employee, 'age', 30);
-console.log(destructivelyUpdatedEmployee); // { name: 'Sam', streetAddress: '11 Broadway', age: 30 }
-console.log(employee); // { name: 'Sam', streetAddress: '11 Broadway', age: 30 }
+console.log(destructivelyUpdatedEmployee); // { name: 'Sam', streetAddress: '13 King Street', age: 30 }
+console.log(employee); // { name: 'Sam', streetAddress: '13 King Street', age: 30 }
 const deletedEmployee = deleteFromEmployeeByKey(employee, 'name');
-console.log(deletedEmployee); // { streetAddress: '11 Broadway', age: 30 }
-console.log(employee); // { name: 'Sam', streetAddress: '11 Broadway', age: 30 }
+console.log(deletedEmployee); // { streetAddress: '13 King Street', age: 30 }
+console.log(employee); // { name: 'Sam', streetAddress: '13 King Street', age: 30 }
 const destructivelyDeletedEmployee = destructivelyDeleteFromEmployeeByKey(employee, 'name');
-console.log(destructivelyDeletedEmployee); // { streetAddress: '11 Broadway', age: 30 }
-console.log(employee); // { streetAddress: '11 Broadway', age: 30 }
+console.log(destructivelyDeletedEmployee); // { streetAddress: '13 King Street', age: 30 }
+console.log(employee); // { streetAddress: '13 King Street', age: 30 }
 // The code above defines an employee object and implements functions to update, delete, and destructively update the employee object.
 // The test cases demonstrate the functionality of each function.
 // The functions work as expected, creating new objects or modifying the original object as specified.
